@@ -1,0 +1,6 @@
+{
+    "inputName": "Input XMind file",
+    "author": "tattoo",
+    "currentTime": "Current: {{time, MM/DD/YYYY}}",
+    "extract": "Extract"
+}

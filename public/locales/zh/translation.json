@@ -1,0 +1,6 @@
+{
+    "inputName": "输入 XMind 文件",
+    "author": "tattoo",
+    "currentTime": "当前时间是 {{time, YYYY-MM-DD}}",
+    "extract": "解开"
+}
