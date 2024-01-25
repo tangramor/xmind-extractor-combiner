@@ -1,6 +1,9 @@
 {
+    "xmindFileExtractOrCompress": "Extract/Compress XMind File",
     "inputName": "Input XMind file",
+    "inputFolder": "Select Folder",
     "author": "tattoo",
     "currentTime": "Current: {{time, MM/DD/YYYY}}",
-    "extract": "Extract"
+    "extract": "Extract",
+    "combine": "Compress"
 }
