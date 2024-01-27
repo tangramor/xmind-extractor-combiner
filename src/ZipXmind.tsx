@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { invoke } from "@tauri-apps/api/tauri";
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { open } from "@tauri-apps/api/dialog";
 
 export function ZipXmind() {
@@ -8,9 +8,9 @@ export function ZipXmind() {
     const [name, setName] = useState("");
     const { t } = useTranslation();
 
-    async function compress() {
-        alert("Compress..." + name);
-        setZipMsg(await invoke("compress", { name }));
+    async function combine() {
+        // alert("Compress..." + name);
+        setZipMsg(await invoke("combine", { name }));
     }
 
     var folderXmind;
@@ -44,7 +44,7 @@ export function ZipXmind() {
                 <button
                     onClick={(e) => {
                         e.preventDefault();
-                        compress();
+                        combine();
                     }}>{t('combine')}</button>
             </form>
 

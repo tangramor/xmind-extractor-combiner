@@ -20,11 +20,13 @@ fn combine(name: &str) -> String {
     println!("compress dir {name:?} ...");
     let path = Path::new(name);
     let parent = path.parent().unwrap();
-    let filename = parent.join(path.file_name()
-        .unwrap()
-        .to_str()
-        .unwrap()
-        .replace('_', "."));
+    let filename = parent.join(
+        path.file_name()
+            .unwrap()
+            .to_str()
+            .unwrap()
+            .replace('_', "."),
+    );
 
     println!("compress dir {name:?} as {name:?} ...");
 

@@ -1,6 +1,7 @@
 {
     "xmindFileExtractOrCompress": "解开/合成 XMind 文件",
     "inputName": "输入 XMind 文件",
+    "clickIconToSwitch": "点击图标来切换 解开/合成 功能",
     "inputFolder": "选择文件夹",
     "author": "tattoo",
     "currentTime": "当前时间是 {{time, YYYY-MM-DD}}",

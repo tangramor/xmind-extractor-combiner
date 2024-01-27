@@ -1,11 +1,12 @@
 {
-    "xmindFileExtractOrCompress": "Extract/Compress XMind File",
+    "xmindFileExtractOrCompress": "Extract/Combine XMind File",
     "inputName": "Input XMind file",
+    "clickIconToSwitch": "Click the Icon to switch Extract and Combine function",
     "inputFolder": "Select Folder",
     "author": "tattoo",
     "currentTime": "Current: {{time, MM/DD/YYYY}}",
     "descExtractXmind": "Extract XMind file to a folder with related name",
-    "descCompressXmindFolder": "Compress the folder to XMind file",
+    "descCompressXmindFolder": "Combine the folder to XMind file",
     "extract": "Extract",
-    "combine": "Compress"
+    "combine": "Combine"
 }

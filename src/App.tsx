@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { invoke } from "@tauri-apps/api/tauri";
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { open } from "@tauri-apps/api/dialog";
 import { getFileNameFromPath } from "./helper";
-// import { ZipXmind } from "./ZipXmind";
+import { ZipXmind } from "./ZipXmind";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -34,28 +34,11 @@ function App() {
     }
   }
 
-  const [zipMsg, setZipMsg] = useState("");
-  async function compress() {
-    alert("Compress..." + name);
-    setZipMsg(await invoke("combine", { name }));
-}
-
-  var folderXmind;
-  async function openXmindFolder() {
-      folderXmind = await open({
-          directory: true,
-      });
-      if (folderXmind === null) {
-          alert("No folder name");
-      } else {
-          // alert(folderXmind.toString());
-          setName(folderXmind.toString());
-      }
-  }
-
   return (
     <div className="container">
       <h1>{t('xmindFileExtractOrCompress')}</h1>
+
+      <p>{t('clickIconToSwitch')}</p>
 
       <div className="row">
         <a onClick={() => setIsZipView(!isZipView)} >
@@ -64,29 +47,7 @@ function App() {
       </div>
 
       {isZipView ? (
-        <div>
-          <p>{t('descCompressXmindFolder')}</p>
-
-          <form
-              className="col"
-
-          >
-              <input
-                  id="greet-input"
-                  onClick={() => openXmindFolder()}
-                  placeholder={t('inputFolder')}
-                  value={name}
-              />
-              <p></p>
-              <button
-                  onClick={(e) => {
-                      e.preventDefault();
-                      compress();
-                  }}>{t('combine')}</button>
-          </form>
-
-          <p>{zipMsg}</p>
-      </div>
+        <ZipXmind />
       ) : (
         <div>
           <p>{t('descExtractXmind')}</p>
