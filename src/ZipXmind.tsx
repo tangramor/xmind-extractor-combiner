@@ -4,12 +4,13 @@ import { useTranslation, Trans } from 'react-i18next';
 import { open } from "@tauri-apps/api/dialog";
 
 export function ZipXmind() {
+    const [zipMsg, setZipMsg] = useState("");
     const [name, setName] = useState("");
     const { t } = useTranslation();
 
     async function compress() {
-        // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
-
+        alert("Compress..." + name);
+        setZipMsg(await invoke("compress", { name }));
     }
 
     var folderXmind;
@@ -20,14 +21,14 @@ export function ZipXmind() {
         if (folderXmind === null) {
             alert("No folder name");
         } else {
-            alert(folderXmind.toString());
+            // alert(folderXmind.toString());
             setName(folderXmind.toString());
         }
     }
 
     return (
         <div>
-            <p>Compress XMind files</p>
+            <p>{t('descCompressXmindFolder')}</p>
 
             <form
                 className="col"
@@ -46,6 +47,8 @@ export function ZipXmind() {
                         compress();
                     }}>{t('combine')}</button>
             </form>
+
+            <p>{zipMsg}</p>
         </div>
     );
 }

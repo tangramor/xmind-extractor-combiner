@@ -3,7 +3,7 @@ import { invoke } from "@tauri-apps/api/tauri";
 import { useTranslation, Trans } from 'react-i18next';
 import { open } from "@tauri-apps/api/dialog";
 import { getFileNameFromPath } from "./helper";
-import { ZipXmind } from "./ZipXmind";
+// import { ZipXmind } from "./ZipXmind";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -34,6 +34,24 @@ function App() {
     }
   }
 
+  const [zipMsg, setZipMsg] = useState("");
+  async function compress() {
+    alert("Compress..." + name);
+    setZipMsg(await invoke("combine", { name }));
+}
+
+  var folderXmind;
+  async function openXmindFolder() {
+      folderXmind = await open({
+          directory: true,
+      });
+      if (folderXmind === null) {
+          alert("No folder name");
+      } else {
+          // alert(folderXmind.toString());
+          setName(folderXmind.toString());
+      }
+  }
 
   return (
     <div className="container">
@@ -46,10 +64,32 @@ function App() {
       </div>
 
       {isZipView ? (
-        <ZipXmind />
+        <div>
+          <p>{t('descCompressXmindFolder')}</p>
+
+          <form
+              className="col"
+
+          >
+              <input
+                  id="greet-input"
+                  onClick={() => openXmindFolder()}
+                  placeholder={t('inputFolder')}
+                  value={name}
+              />
+              <p></p>
+              <button
+                  onClick={(e) => {
+                      e.preventDefault();
+                      compress();
+                  }}>{t('combine')}</button>
+          </form>
+
+          <p>{zipMsg}</p>
+      </div>
       ) : (
         <div>
-          <p>Click on the Tauri, Vite, and React logos to learn more.</p>
+          <p>{t('descExtractXmind')}</p>
 
           <form
             className="col"
