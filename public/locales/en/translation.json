@@ -5,6 +5,8 @@
     "inputFolder": "Select Folder",
     "author": "tattoo",
     "currentTime": "Current: {{time, MM/DD/YYYY}}",
+    "nofilename": "No file selected",
+    "nofoldername": "No folder selected",
     "descExtractXmind": "Extract XMind file to a folder with related name",
     "descCompressXmindFolder": "Combine the folder to XMind file",
     "extract": "Extract",

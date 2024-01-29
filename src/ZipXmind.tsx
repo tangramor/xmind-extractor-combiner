@@ -19,7 +19,7 @@ export function ZipXmind() {
             directory: true,
         });
         if (folderXmind === null) {
-            alert("No folder name");
+            alert(t('nofoldername'));
         } else {
             // alert(folderXmind.toString());
             setName(folderXmind.toString());

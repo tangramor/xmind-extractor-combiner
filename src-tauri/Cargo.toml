@@ -1,11 +1,11 @@
 [package]
-name = "xmind-extractor"
-version = "0.0.0"
-description = "A Tauri App"
-authors = ["you"]
+name = "xmind-extractor-combiner"
+version = "0.0.1"
+description = "XMind File Extractor/Combiner"
+authors = ["tangramor"]
 license = ""
-repository = ""
-edition = "2021"
+repository = "https://github.com/tangramor/xmind-extractor-combiner"
+edition = "2024"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

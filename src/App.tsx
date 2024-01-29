@@ -26,7 +26,7 @@ function App() {
       }]
     });
     if (fileXmind === null) {
-      alert("No file name");
+      alert(t('nofilename'));
     } else {
       // alert(fileXmind.toString());
       setName(fileXmind.toString());
