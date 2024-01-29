@@ -3941,8 +3941,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "xmind-extractor"
-version = "0.0.0"
+name = "xmind-extractor-combiner"
+version = "0.0.1"
 dependencies = [
  "serde",
  "serde_json",
