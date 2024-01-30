@@ -40,13 +40,6 @@ I met blank window when running the app on Windows 10. Here are the steps to fix
 ![02](./docs/images/02.png)
 
 
-### Build for Production
-
-To build the app for production, run:
-
-```bash
-npm run build
-```
 
 ## Developing the features of this project
 
