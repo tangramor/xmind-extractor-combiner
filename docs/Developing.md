@@ -4,7 +4,7 @@
 
 Reference: https://tauri.app/v1/guides/features/icons/
 
-I use GIMP created a png file as the new icon for this app. The file name is `xmind-extractor.png`.
+I have created a png file by GIMP as the new icon for this app. The file name is `xmind-extractor.png`.
 
 To create the icon, run the following command in the terminal:
 

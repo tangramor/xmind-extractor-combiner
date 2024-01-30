@@ -48,7 +48,7 @@ To build the app for production, run:
 npm run build
 ```
 
-## Developing the purpos of this project
+## Developing the features of this project
 
 - [Developing](./docs/Developing.md)
 
