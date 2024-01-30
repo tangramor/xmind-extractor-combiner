@@ -10,5 +10,6 @@
     "descExtractXmind": "Extract XMind file to a folder with related name",
     "descCompressXmindFolder": "Combine the folder to XMind file",
     "extract": "Extract",
-    "combine": "Combine"
+    "combine": "Combine",
+    "preview": "Preview"
 }

@@ -17,7 +17,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^14.0.1",
-    "xmind": "^2.2.33"
+    "xmind-embed-viewer": "^1.2.0"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.5.8",

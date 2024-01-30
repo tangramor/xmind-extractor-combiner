@@ -68,6 +68,10 @@ function App() {
                 e.preventDefault();
                 extract();
               }}>{t('extract')}</button>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+              }}>{t('preview')}</button>
           </form>
 
           <p>{greetMsg}</p>

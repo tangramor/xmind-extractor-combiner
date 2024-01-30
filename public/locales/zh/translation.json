@@ -10,5 +10,6 @@
     "descExtractXmind": "将 XMind 文件解压到同名文件夹",
     "descCompressXmindFolder": "将对应文件夹合成为 XMind 文件",
     "extract": "解开",
-    "combine": "合成"
+    "combine": "合成",
+    "preview": "预览"
 }
