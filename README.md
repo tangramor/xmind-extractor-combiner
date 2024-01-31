@@ -40,6 +40,13 @@ I met blank window when running the app on Windows 10. Here are the steps to fix
 ![02](./docs/images/02.png)
 
 
+#### MacOS
+
+I met `npm install` not working on MacOS. It is because the network continue trying to use IPv6 to access the npm registry. Here are the steps to fix it:
+
+- Open the system preferences and go to "Network"
+- Select "Advanced" and then "TCP/IP"
+- Change "IPv6" to "Off"
 
 ## Developing the features of this project
 
