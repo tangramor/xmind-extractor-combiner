@@ -48,6 +48,14 @@ I met `npm install` not working on MacOS. It is because the network continue try
 - Select "Advanced" and then "TCP/IP"
 - Change "IPv6" to "Off"
 
+Another problem is it keep returning `[tauri:dev] Waiting for your dev server to start...` for ever. I posted my solution here:
+
+https://github.com/n8jadams/tauri-typescript-react-boilerplate/issues/34#issuecomment-1915008991
+
+modify the **package.json**:
+
+`"dev": "vite",` to `"dev": "vite --host",`
+
 ## Developing the features of this project
 
 - [Developing](./docs/Developing.md)
