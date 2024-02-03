@@ -57,8 +57,8 @@ function App() {
         <div>
           <div className="preview">
             <div id="previewContainer"></div>
+            <button className="hideBtn" onClick={() => setShowPreview(false)}>Hide Preview</button>
           </div>
-          <button className="hideBtn" onClick={() => setShowPreview(false)}>Hide Preview</button>
         </div>
       ) : (
         <div className="container">
