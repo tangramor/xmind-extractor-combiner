@@ -30,10 +30,7 @@ export function ZipXmind() {
         <div>
             <p>{t('descCompressXmindFolder')}</p>
 
-            <form
-                className="col"
-
-            >
+            <form className="col">
                 <input
                     id="greet-input"
                     onClick={() => openXmindFolder()}
