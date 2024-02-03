@@ -14,3 +14,14 @@ npm run tauri icon src-tauri/xmind-extractor.png
 
 This command will generate icon files for all platforms in the `src-tauri/icons` directory.
 
+
+## I18n
+
+### React
+
+[i18next](https://github.com/i18next) and [react-i18next](https://github.com/i18next/react-i18next)
+
+### Rust
+
+[Fluent](https://projectfluent.org)
+
