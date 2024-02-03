@@ -11,5 +11,6 @@
     "descCompressXmindFolder": "Combine the folder to XMind file",
     "extract": "Extract",
     "combine": "Combine",
-    "preview": "Preview"
+    "preview": "Preview",
+    "hidePreview": "Hide Preview"
 }
